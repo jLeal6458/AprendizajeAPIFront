@@ -1,45 +1,63 @@
 /* Estilos generales */
 .root {
-    -fx-font-family: "Arial";
-    -fx-base: #f5f5f5;
+    -fx-font-family: "Helvetica";
+    -fx-base: #F4F4F4;
+    -fx-font-weight: bold;
 }
 
 /* Botones */
 .button {
-    -fx-background-color: #0077b6; /* Azul oscuro */
-    -fx-text-fill: #000000; /* Negro */
+    -fx-background-color: #4CAF50; /* Green */
+    -fx-text-fill: #FFFFFF; /* White */
     -fx-padding: 10 20 10 20;
-    -fx-font-size: 14px;
+    -fx-font-size: 16px;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
 }
 
 .button:hover {
-    -fx-background-color: #00adb5; /* Cian */
+    -fx-background-color: #81C784; /* Light Green */
     -fx-cursor: hand;
 }
 
 /* Etiquetas */
 .label {
-    -fx-text-fill: #0077b6; /* Azul oscuro */
+    -fx-text-fill: #3F51B5; /* Indigo */
     -fx-font-size: 14px;
 }
 
 /* Campos de texto */
 .text-field {
-    -fx-background-color: #f0f0f0;
-    -fx-border-color: #0077b6; /* Azul oscuro */
+    -fx-background-color: #F4F4F4;
+    -fx-border-color: #3F51B5; /* Indigo */
     -fx-border-width: 2px;
-    -fx-text-fill: #000000; /* Negro */
+    -fx-text-fill: #000000; /* Black */
     -fx-prompt-text-fill: #9b9b9b;
-    -fx-font-size: 14px;
+    -fx-font-size: 16px;
+    -fx-border-radius: 10;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 4, 0.0, 0, 4);
 }
 
 .text-field:focused {
     -fx-background-color: white;
-    -fx-border-color: #f95738; /* Rojo naranja */
+    -fx-border-color: #FF5722; /* Deep Orange */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 6, 0.0, 0, 6);
 }
 
 /* Áreas de texto */
 .text-area {
-    -fx-background-color: #f0f0f0;
-    -fx-border-color: #0077b6; /* Azul
+    -fx-background-color: #F4F4F4;
+    -fx-border-color: #3F51B5; /* Indigo */
+    -fx-font-size: 16px;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10;
+    -fx-background-insets: 1;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 4, 0.0, 0, 4);
 }
+
+.text-area:focused {
+    -fx-background-color: white;
+    -fx-border-color: #FF5722; /* Deep Orange */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 6, 0.0, 0, 6);
+}
+
